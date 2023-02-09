@@ -1,0 +1,25 @@
+GRAVE
+Algorithm to match
+
+Maybe use readaline, have type of bet before the line/description
+        so that we know how much to "malloc". Use split function also?
+
+Overall design:
+    Use C to gather arrays, use Hansons stuff (atoms, tables) to organize data
+    like organizing bets by game, then by parlay (although probably won't) deal
+    with that. 
+
+    What do I use c++ for?
+    
+    
+    Output: total made by the book, bets rejected (full username, etc.), total $ in bets places,
+
+        later implement a GUI?
+
+
+Matching C and C++:
+    Compile C programs...
+        gcc -c -o somecode.o somecode.c
+    Compile C++ programs...
+        g++ -c -o othercode.o othercode.cpp
+    
