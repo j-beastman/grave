@@ -1,5 +1,14 @@
 GRAVE
-Algorithm to match
+Algorithm for a bookmaker.
+    Bets for the same game, for the same type (spread, O/U), will be matched up.
+    Those that cannot be matched up, in the case where there is no bet on the
+    opposite side with the same value, will remain "open". They will remain
+    open because another bettor may want to take the other side of this bet.
+
+    So, if Garry places a bet for 200$ on the under for the Celtics vs. Raptors
+    game and there are no open bets on the over side for the Celtics vs. Raptors
+    game, then 
+        In other words, 
 
 Maybe use readaline, have type of bet before the line/description
         so that we know how much to "malloc". Use split function also?
@@ -14,8 +23,22 @@ Overall design:
     
     Output: total made by the book, bets rejected (full username, etc.), total $ in bets places,
 
-        later implement a GUI?
+    later implement a GUI?
+        **See example before for how GUI would look.
 
+Example:
+    file.txt:
+-->FORMAT: Game, odds + type + additional information, Bettor's pick, Bettor's bet<--
+        Celtics vs. Raptors, -110 spread (-2.5), Celtics, $100
+        Celtics vs. Raptors, -110 spread (-2.5), Raptors, $100
+        Celtics vs. Raptors, -110 O/U 114.5, Over, -110, $100
+        Celtics vs. Raptors, -110 O/U 114.5, Over, -110, $100
+        Celtics vs. Raptors, -110 O/U 114.5, Under, -110, $200
+
+    Program has a hash table. Perhaps I make a class for it.
+
+
+    Priority queue for open bets?
 
 Matching C and C++:
     Compile C programs...
