@@ -1,5 +1,7 @@
-GRAVE
-Algorithm for a bookmaker.
+GRAVE --> Algorithm for a bookmaker.
+
+Basic Overview:
+
     Bets for the same game, for the same type (spread, O/U), will be matched up.
     Those that cannot be matched up, in the case where there is no bet on the
     opposite side with the same value, will remain "open". They will remain
@@ -7,19 +9,26 @@ Algorithm for a bookmaker.
 
     So, if Garry places a bet for 200$ on the under for the Celtics vs. Raptors
     game and there are no open bets on the over side for the Celtics vs. Raptors
-    game, then 
-        In other words, 
+    game, then Garry's bet would remain open. 
+
+    **The term "open" is defined as such--Garry's bet is now in the system.
+        If Janet places a bet on the opposite side (the over) for 100$, then
+        Garry would have a bet of 100$ still open. Garry will have the option to
+        remove the remaining open bet at any time.
+    
+    All open bets will be displayed so that clients can see what bets can be
+    immediately locked into the book. 
+    
+    There is no commision for the book. Obviously this is all hypothetical
+    and no real money or outside users are involved. But, this program is
+    supposed to represent a betting platform with no middle man, no juice, 
+    no commision.
 
 Maybe use readaline, have type of bet before the line/description
         so that we know how much to "malloc". Use split function also?
 
-Overall design:
-    Use C to gather arrays, use Hansons stuff (atoms, tables) to organize data
-    like organizing bets by game, then by parlay (although probably won't) deal
-    with that. 
-
-    What do I use c++ for?
-    
+Overall design & data structures:
+    What would I use C for? C++ for?
     
     Output: total made by the book, bets rejected (full username, etc.), total $ in bets places,
 
@@ -34,11 +43,6 @@ Example:
         Celtics vs. Raptors, -110 O/U 114.5, Over, -110, $100
         Celtics vs. Raptors, -110 O/U 114.5, Over, -110, $100
         Celtics vs. Raptors, -110 O/U 114.5, Under, -110, $200
-
-    Program has a hash table. Perhaps I make a class for it.
-
-
-    Priority queue for open bets?
 
 Matching C and C++:
     Compile C programs...
