@@ -34,10 +34,11 @@ public:
         
         //Function to print out the state of the book
 
-        
+
 
 private:
         struct bet {
+                //Side of the bet
                 side leftOrRight;
                 int betAmount;
                 string userName;
