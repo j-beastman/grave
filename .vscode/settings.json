@@ -1,0 +1,7 @@
+{
+        //What does this mean?
+        "files.associations": {
+                "string": "cpp"
+        },
+        "C_Cpp.errorSquiggles": "disabled"
+}

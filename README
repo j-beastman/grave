@@ -28,7 +28,13 @@ Maybe use readaline, have type of bet before the line/description
         so that we know how much to "malloc". Use split function also?
 
 Overall design & data structures:
-    What would I use C for? C++ for?
+    **What would I use C for? C++ for?**
+    Would it be fast to use C in order to find lines that have the same game?
+        Then put the line numbers of certain games into an array. I'd pass this
+        array back to my C++ files where I'd 
+
+    Classes : Data Structures--
+    class theBook
     
     Output: total made by the book, bets rejected (full username, etc.), total $ in bets places,
 
@@ -37,7 +43,7 @@ Overall design & data structures:
 
 Example:
     file.txt:
--->FORMAT: Game, odds + type + additional information, Bettor's pick, Bettor's bet<--
+-->FORMAT: Username, Game, odds + type + additional information, Bettor's pick, Bettor's bet<--
         Celtics vs. Raptors, -110 spread (-2.5), Celtics, $100
         Celtics vs. Raptors, -110 spread (-2.5), Raptors, $100
         Celtics vs. Raptors, -110 O/U 114.5, Over, -110, $100
